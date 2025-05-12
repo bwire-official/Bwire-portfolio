@@ -52,23 +52,23 @@ const Contact = () => {
   const socialLinks = [
     {
       icon: <FaEnvelope className="w-5 h-5" />,
-      href: 'mailto:your.email@example.com',
-      label: 'your.email@example.com'
+      href: 'mailto:onlybwire.dev@gmail.com',
+      label: 'onlybwire.dev@gmail.com'
     },
     {
       icon: <SiGithub className="w-5 h-5" />,
-      href: 'https://github.com/yourusername',
-      label: 'github.com/yourusername'
+      href: 'https://github.com/bwire-official',
+      label: 'github.com/bwire-official'
     },
-    {
-      icon: <SiLinkedin className="w-5 h-5" />,
-      href: 'https://linkedin.com/in/yourusername',
-      label: 'linkedin.com/in/yourusername'
-    },
+    // {
+    //   icon: <SiLinkedin className="w-5 h-5" />,
+    //   href: 'https://linkedin.com/in/yourusername',
+    //   label: 'linkedin.com/in/yourusername'
+    // },
     {
       icon: <FaTwitter className="w-5 h-5" />,
-      href: 'https://twitter.com/yourusername',
-      label: 'twitter.com/yourusername'
+      href: 'https://x.com/bwire_official',
+      label: 'x.com/bwire_official'
     }
   ];
 

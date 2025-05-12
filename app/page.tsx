@@ -77,16 +77,15 @@ export default function Home() {
             </div>
             
             <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-              Bridging the gap between Web2 and Web3. I architect and build decentralized applications,
-              smart contracts, and modern web platforms. Transforming ideas into secure, scalable, and
-              user-friendly solutions.
+              Bridging the gap between Web2 and Web3 by designing and building decentralized applications (dApps) and modern web platforms. 
+              I turn ideas into secure, scalable, and user-friendly solutions that work in the real world.
             </p>
             
             {/* Tech stack badges */}
             <div className="flex flex-wrap justify-center gap-2 mb-8">
-              <span className="px-3 py-1 text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full hover-3d">
+              {/* <span className="px-3 py-1 text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full hover-3d">
                 Smart Contracts
-              </span>
+              </span> */}
               <span className="px-3 py-1 text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full hover-3d">
                 DApps
               </span>
@@ -100,7 +99,7 @@ export default function Home() {
             
             <div className="flex justify-center space-x-6 mb-8">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/bwire-official"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all transform hover:scale-110 hover:rotate-3"
@@ -108,7 +107,7 @@ export default function Home() {
                 <FaGithub className="w-6 h-6" />
               </a>
               <a
-                href="https://x.com/yourusername"
+                href="https://x.com/bwire_official"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all transform hover:scale-110 hover:rotate-3"

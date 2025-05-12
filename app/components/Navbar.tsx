@@ -2,8 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaDownload, FaMoon, FaSun, FaUser, FaCode, FaEnvelope } from 'react-icons/fa';
-import { SiX } from 'react-icons/si';
+import { FaMoon, FaSun, FaUser, FaCode, FaEnvelope, FaDownload } from 'react-icons/fa';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 
@@ -24,19 +23,6 @@ const Navbar = () => {
     { href: '#about', label: 'About', icon: <FaUser className="w-5 h-5" /> },
     { href: '#projects', label: 'Projects', icon: <FaCode className="w-5 h-5" /> },
     { href: '#contact', label: 'Contact', icon: <FaEnvelope className="w-5 h-5" /> }
-  ];
-
-  const socialLinks = [
-    {
-      icon: <FaGithub className="w-5 h-5" />,
-      href: 'https://github.com/yourusername',
-      label: 'GitHub'
-    },
-    {
-      icon: <SiX className="w-5 h-5" />,
-      href: 'https://x.com/yourusername',
-      label: 'X'
-    }
   ];
 
   return (
@@ -80,20 +66,8 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Social Links, Theme Toggle and CV Download */}
+          {/* Theme Toggle and CV Download */}
           <div className="flex items-center space-x-4">
-            {socialLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                aria-label={link.label}
-              >
-                {link.icon}
-              </a>
-            ))}
             <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               className="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -103,7 +77,7 @@ const Navbar = () => {
             </button>
             <a
               href="/cv.pdf"
-              download
+              download="Bwire_CV.pdf"
               className="flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
             >
               <FaDownload className="w-4 h-4" />

@@ -10,23 +10,23 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <FaEnvelope className="w-5 h-5" />,
-      href: 'mailto:your.email@example.com',
+      href: 'mailto:onlybwire.dev@gmail.com',
       label: 'Email'
     },
     {
       icon: <SiGithub className="w-5 h-5" />,
-      href: 'https://github.com/yourusername',
+      href: 'https://github.com/bwire-official',
       label: 'GitHub'
     },
     {
       icon: <SiLinkedin className="w-5 h-5" />,
-      href: 'https://linkedin.com/in/yourusername',
+      href: '#',
       label: 'LinkedIn'
     },
     {
       icon: <FaTwitter className="w-5 h-5" />,
-      href: 'https://twitter.com/yourusername',
-      label: 'Twitter'
+      href: 'https://x.com/bwire_official',
+      label: 'x'
     }
   ];
 
@@ -48,7 +48,7 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
             className="space-y-4"
           >
-            <h3 className="text-xl font-bold text-white">Your Name</h3>
+            <h3 className="text-xl font-bold text-white">Bwire</h3>
             <p className="text-sm">
               Building the future of web applications with modern technologies and creative solutions.
             </p>
@@ -117,12 +117,12 @@ const Footer = () => {
                   href="mailto:your.email@example.com"
                   className="text-white hover:text-blue-400 transition-colors"
                 >
-                  your.email@example.com
+                  onlybwire.dev@gmail.com
                 </a>
               </li>
               <li className="text-gray-400">
                 <span className="block">Location:</span>
-                <span className="text-white">Your City, Country</span>
+                <span className="text-white"> Remote </span>
               </li>
             </ul>
           </motion.div>
@@ -137,7 +137,7 @@ const Footer = () => {
           className="mt-12 pt-8 border-t border-gray-800 text-center"
         >
           <p className="text-sm text-gray-400">
-            © {currentYear} Your Name. All rights reserved.
+            © {currentYear} Bwire. All rights reserved.
           </p>
           <p className="text-xs text-gray-500 mt-2">
             Built with Next.js, TypeScript, and Tailwind CSS
