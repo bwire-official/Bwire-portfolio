@@ -66,7 +66,7 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Theme Toggle and CV Download */}
+          {/* Theme Toggle and CV Download ...*/}
           <div className="flex items-center space-x-4">
             <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
