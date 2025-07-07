@@ -7,33 +7,51 @@ import { useState } from 'react';
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce platform built with Next.js, Node.js, and MongoDB. Features include user authentication, product management, shopping cart, and payment integration.',
-    technologies: ['Next.js', 'Node.js', 'MongoDB', 'Express', 'JWT'],
-    github: 'https://github.com/yourusername/ecommerce',
-    live: 'https://ecommerce-demo.com',
-    image: '/projects/ecommerce.jpg',
-    category: 'Full Stack'
+    title: 'Wish Consult',
+    description:
+      'A premium e-learning and consultancy platform for healthcare professionals. Features include role-based dashboards, structured course paths, affiliate system, real-time analytics, OTP auth, and AI-powered assistant.',
+    technologies: [
+      'Next.js',
+      'Supabase',
+      'Tailwind CSS',
+      'Cloudinary',
+      'Flutterwave',
+      'TypeScript',
+    ],
+    github: 'https://github.com/bwire-official/wish-consultt',
+    live: 'https://wishconsult.app',
+    image: '/projects/wish-consult.jpg',
+    category: 'Full Stack',
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates, team features, and progress tracking. Built with React, Node.js, and PostgreSQL.',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Socket.io', 'Express'],
-    github: 'https://github.com/yourusername/task-manager',
-    live: 'https://task-manager-demo.com',
-    image: '/projects/task-manager.jpg',
-    category: 'Full Stack'
+    title: 'KoruSync',
+    description:
+      'A productivity PWA to help users balance Web3, school, and life. Includes task management, goal tracking, focus tools, and AI productivity insights. Built for cross-device usage with offline support.',
+    technologies: ['Next.js', 'Supabase', 'Tailwind CSS', 'TypeScript', 'PWA'],
+    github: 'https://github.com/bwire-official/korusync',
+    live: 'https://korusync.vercel.app',
+    image: '/projects/korusync.jpg',
+    category: 'Productivity',
   },
   {
-    title: 'Social Media Dashboard',
-    description: 'A responsive dashboard for social media analytics with data visualization, user management, and real-time statistics.',
-    technologies: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Chart.js'],
-    github: 'https://github.com/yourusername/social-dashboard',
-    live: 'https://social-dashboard-demo.com',
-    image: '/projects/dashboard.jpg',
-    category: 'Frontend'
-  }
+    title: 'Myla Bundle Ltd',
+    description:
+      'A CAC-verified firm focused on strategic digital venture building and private capital deployment. Offers services like strategic consulting, private deal structuring, capital bundling, and global supply chain solutions for growth-driven partners.',
+    technologies: [
+      'Strategic Consulting',
+      'Venture Building',
+      'Capital Bundling',
+      'Logistics Solutions',
+      'Private Equity',
+    ],
+    github: null,
+    live: 'https://myla-bundle-ltd.vercel.app', 
+    image: '/projects/myla-bundle.jpg',
+    category: 'Business/Consulting',
+  },
 ];
+
+
 
 const categories = ['All', 'Full Stack', 'Frontend', 'Backend'];
 
@@ -135,7 +153,7 @@ export default function Projects() {
                   </div>
                   <div className="flex space-x-4">
                     <motion.a
-                      href={project.github}
+                      href={project.github ?? undefined}
                       target="_blank"
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.05 }}
@@ -171,7 +189,7 @@ export default function Projects() {
           className="text-center mt-12"
         >
           <motion.a
-            href="https://github.com/yourusername"
+            href="https://github.com/bwire-official"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
