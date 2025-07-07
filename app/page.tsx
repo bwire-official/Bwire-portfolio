@@ -64,7 +64,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center relative">
             <div className="inline-block text-3d">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-                <span className="block hover-3d">Hi, I'm Bwire</span>
+                <span className="block hover-3d">I'm Bwire</span>
                 <span className="block mt-2">
                   <span className="text-blue-600 dark:text-blue-400 hover-3d animate-glow">Web3</span>
                   <span className="text-gray-600 dark:text-gray-300"> & </span>
